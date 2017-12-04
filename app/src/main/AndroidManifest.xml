@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mastpro.dpsu.stegosms" >
+
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/stegsms"
+        android:label="@string/app_name"
+        android:theme="@style/StegSMSAppTheme" >
+        <activity
+            android:name="com.mastpro.dpsu.stegosms.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mastpro.dpsu.stegosms.EmbeddActivity"
+            android:label="@string/title_activity_encrypt" >
+        </activity>
+        <activity
+            android:name="com.mastpro.dpsu.stegosms.DecodeActivity"
+            android:label="@string/title_activity_decrypt" >
+        </activity>
+        <activity
+            android:name="com.mastpro.dpsu.stegosms.PickSmsActivity"
+            android:label="@string/title_activity_sms_picker" >
+        </activity>
+        <activity
+            android:name="com.mastpro.dpsu.stegosms.SendCipherMsgActivity"
+            android:label="@string/title_activity_send_final_msg" >
+        </activity>
+        <activity
+            android:name="com.mastpro.dpsu.stegosms.OutputDecodeActivity"
+            android:label="@string/title_activity_decrypted_output" >
+        </activity>
+    </application>
+
+</manifest>

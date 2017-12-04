@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.elgali.amos.smssteganography" >
+
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EncryptActivity"
+            android:label="@string/title_activity_encrypt" >
+        </activity>
+        <activity
+            android:name=".DecryptActivity"
+            android:label="@string/title_activity_decrypt" >
+        </activity>
+        <activity
+            android:name=".SmsPicker"
+            android:label="@string/title_activity_sms_picker" >
+        </activity>
+        <activity
+            android:name=".SendFinalMsgActivity"
+            android:label="@string/title_activity_send_final_msg" >
+        </activity>
+        <activity
+            android:name=".DecryptedOutputActivity"
+            android:label="@string/title_activity_decrypted_output" >
+        </activity>
+    </application>
+
+</manifest>
